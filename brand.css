@@ -1,0 +1,30 @@
+/* Official FINAL/02 outlines: independent positive and reversed artwork. */
+.masthead .brand,.footer-brand{display:flex;align-items:center;min-height:44px;line-height:1;letter-spacing:normal;flex:none;gap:0}
+.masthead .brand{width:187px;height:44px}
+.footer-brand{width:187px;height:44px}
+.brand-lockup{display:block;width:100%}
+.brand-lockup img{display:block;width:100%;height:auto}
+/* Keep the official outlines at an integral height; no transform rasterization. */
+.masthead .brand-lockup{height:20px;position:relative;top:0}
+.masthead .brand-lockup img{width:auto;height:100%;max-width:100%}
+.brand-dark{display:none}
+html[data-theme=dark] .brand-light{display:none}
+html[data-theme=dark] .brand-dark{display:block}
+@media(max-width:1050px){.masthead .brand{width:187px}.masthead .brand-lockup{height:20px}}
+@media(max-width:850px){.masthead .brand-lockup{top:0}}
+@media(max-width:700px){.masthead .brand{width:187px}.masthead .brand-lockup{height:20px;top:0}}
+@media(max-width:340px){.masthead .brand,.footer-brand{width:123px}.masthead .brand-lockup{height:14px}}
+
+/* Chinese artwork keeps its own aspect ratio at the same optical heights. */
+html .brand-lockup[data-brand-language=zh]{display:none}
+html[lang=zh-CN] .brand-lockup[data-brand-language=en]{display:none}
+html[lang=zh-CN] .brand-light[data-brand-language=zh]{display:block}
+html[lang=zh-CN][data-theme=dark] .brand-light[data-brand-language=zh]{display:none}
+html[lang=zh-CN][data-theme=dark] .brand-dark[data-brand-language=zh]{display:block}
+html[lang=zh-CN] .masthead .brand{width:111.4px}
+html[lang=zh-CN] .footer-brand{width:111.4px}
+html[lang=zh-CN] .footer-brand .brand-lockup{height:20px}
+html[lang=zh-CN] .footer-brand .brand-lockup img{width:auto;height:100%;max-width:100%}
+@media(max-width:1050px){html[lang=zh-CN] .masthead .brand{width:111.4px}}
+@media(max-width:700px){html[lang=zh-CN] .masthead .brand{width:111.4px}}
+@media(max-width:340px){html[lang=zh-CN] .masthead .brand,html[lang=zh-CN] .footer-brand{width:75.3px}html[lang=zh-CN] .footer-brand .brand-lockup{height:14px}}
