@@ -55,7 +55,8 @@ html[data-theme=dark] .scene-exhibit[data-outcome=retry] .scene-captions{color:#
 @media(prefers-reduced-motion:reduce){.scene-phase{transition:none}}
 
 .hero-resources{display:flex;align-items:stretch;gap:12px;margin-top:28px;max-width:352px}
-.hero-resource{display:inline-flex;align-items:center;justify-content:center;gap:5px;flex:1;min-width:0;min-height:40px;padding:8px 14px;border:1px solid color-mix(in srgb,var(--blue) 40%,var(--line));border-radius:7px;background:transparent;color:var(--blue);font-size:13px;font-weight:600;line-height:1.5;text-align:center;text-decoration:none;white-space:nowrap}
+.hero-resource{display:inline-flex;align-items:center;justify-content:center;gap:7px;flex:1;min-width:0;min-height:40px;padding:8px 14px;border:1px solid color-mix(in srgb,var(--blue) 40%,var(--line));border-radius:7px;background:transparent;color:var(--blue);font-size:13px;font-weight:600;line-height:1.5;text-align:center;text-decoration:none;white-space:nowrap}
+.hero-resource-icon{display:block;flex:none;width:18px;height:18px;object-fit:contain}
 .hero-resource:hover{background:color-mix(in srgb,var(--blue) 6%,transparent);border-color:var(--blue)}
 .hero-resource:focus-visible{outline:2px solid var(--blue);outline-offset:4px}
 @media(max-width:600px){.hero-resources{gap:10px;margin-top:24px;max-width:340px}.hero-resource{padding:8px 10px;font-size:12px}}

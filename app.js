@@ -36,7 +36,7 @@ function renderLanguage(){
  document.documentElement.lang=lang==='zh'?'zh-CN':'en';$('.masthead nav').setAttribute('aria-label',lang==='zh'?'主导航':'Main Navigation');$('.contents nav').setAttribute('aria-label',lang==='zh'?'本页目录':'On This Page');document.title=lang==='zh'?'展望 Agentic Robotics · 理格万物':'Envisioning Agentic Robotics · Grid Robotics';
  $('.hero-resources').setAttribute('aria-label',lang==='zh'?'论文资源':'Paper resources');
  $('.hero-arxiv').title=lang==='zh'?'在 arXiv 阅读论文':'Read the Paper on arXiv';
- $('.hero-daily-paper').title=lang==='zh'?'在 Hugging Face Daily Papers 为论文投票':'Upvote on Hugging Face Daily Papers';
+ $('.hero-daily-paper').title=lang==='zh'?'在 Hugging Face Daily Papers 查看论文':'View the Paper on Hugging Face Daily Papers';
  const brandName=lang==='zh'?'理格万物':'Grid Robotics';
  $$('.brand,.footer-brand').forEach(link=>link.setAttribute('aria-label',brandName));
  $$('meta[name="application-name"],meta[name="apple-mobile-web-app-title"]').forEach(meta=>meta.content=brandName);
